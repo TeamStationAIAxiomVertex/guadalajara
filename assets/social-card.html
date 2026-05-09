@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: Cormorant;
+        src: url("cormorant-600.ttf");
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: Inter;
+        src: url("inter-500.ttf");
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: Inter;
+        src: url("inter-600.ttf");
+        font-weight: 600;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+        background: #f8f5f8;
+        color: #2d2430;
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      .card {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 405px;
+        gap: 42px;
+        width: 1200px;
+        height: 630px;
+        padding: 56px 64px 54px;
+        border: 1px solid #e8dfe8;
+        background:
+          linear-gradient(135deg, rgba(140, 71, 153, 0.13), rgba(111, 162, 135, 0.1) 42%, rgba(255, 250, 253, 0) 68%),
+          #f8f5f8;
+      }
+
+      .logo {
+        width: 218px;
+        height: auto;
+        margin-bottom: 42px;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: #8c4799;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        width: 690px;
+        margin: 0;
+        color: #241f24;
+        font-family: Cormorant, Georgia, serif;
+        font-size: 68px;
+        font-weight: 600;
+        line-height: 0.92;
+      }
+
+      .subhead {
+        width: 655px;
+        margin: 22px 0 24px;
+        color: #6f6670;
+        font-size: 22px;
+        line-height: 1.38;
+      }
+
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 690px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .services li {
+        padding: 9px 12px;
+        border: 1px solid rgba(32, 92, 64, 0.22);
+        border-radius: 999px;
+        background: rgba(229, 239, 233, 0.72);
+        color: #205c40;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .location {
+        margin: 22px 0 0;
+        color: #544b55;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .media {
+        position: relative;
+        height: 520px;
+        padding: 12px;
+        border: 1px solid rgba(201, 177, 208, 0.72);
+        background: rgba(255, 250, 253, 0.55);
+      }
+
+      .media > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center bottom;
+        filter: saturate(0.94) contrast(0.94) brightness(1.03);
+      }
+
+      .badge {
+        position: absolute;
+        right: 34px;
+        bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 320px;
+        padding: 14px 16px;
+        border: 1px solid rgba(232, 223, 232, 0.9);
+        background: rgba(255, 250, 253, 0.9);
+        color: #4e4650;
+        font-size: 15px;
+        line-height: 1.25;
+      }
+
+      .badge img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <section>
+        <img class="logo" src="sonia-logo-ai.png" alt="Sonia McRorey" />
+        <p class="eyebrow">Imagen Ejecutiva · Guadalajara</p>
+        <h1>Consultora de Imagen Ejecutiva en Guadalajara</h1>
+        <p class="subhead">
+          Presencia profesional, identidad estratégica y percepción ejecutiva para líderes,
+          profesionistas y empresas.
+        </p>
+        <ul class="services">
+          <li>Asesoría ejecutiva</li>
+          <li>Presencia profesional</li>
+          <li>Consultoría empresarial</li>
+          <li>Talleres corporativos</li>
+          <li>Marca personal para líderes</li>
+        </ul>
+        <p class="location">Guadalajara · Zapopan · Andares · Puerta de Hierro</p>
+      </section>
+      <figure class="media">
+        <img src="sonia-editorial.jpg" alt="" />
+        <figcaption class="badge">
+          <img src="sonia-icon.svg" alt="" />
+          <span>Imagen basada en identidad, liderazgo y percepción profesional.</span>
+        </figcaption>
+      </figure>
+    </main>
+  </body>
+</html>
