@@ -10,7 +10,7 @@ Sonia McRorey is positioned as:
 
 The high-authority category is:
 
-`Strategic Executive Presence & Identity Transformation`
+`Consultoría de Presencia Ejecutiva y Percepción Profesional`
 
 This blends executive image, professional presence, perception psychology, identity work, feminine leadership, internal transformation, corporate perception, and strategic visibility.
 
@@ -83,108 +83,42 @@ Use `moda` only when explicitly distinguishing Sonia's work from trend-driven st
 
 ## Semantic Clusters
 
-### Cluster 1: Imagen Ejecutiva
+### Cluster 1: Presencia Ejecutiva
 
-Intent: high-intent individual service search and local executive image demand.
+Intent: executive authority, leadership perception, visibility, and feminine executive presence.
+
+Conversion targets:
+
+- `/coaching-presencia-profesional`
+- `/marca-personal-para-lideres`
+
+Live source URLs:
+
+- `https://imagencoach.com/imagen-presencia/presencia-profesional-estrategica`
+- `https://imagencoach.com/imagen-presencia/imagen-identidad-liderazgo`
+- `https://imagencoach.com/imagen-presencia/sostener-tu-siguiente-nivel-profesional`
+- `https://imagencoach.com/imagen-presencia/sostener-el-crecimiento`
+
+### Cluster 2: Imagen Profesional
+
+Intent: local executive image, professional image for leaders, wardrobe criteria, visual authority, and colorimetry.
 
 Conversion targets:
 
 - `/asesoria-imagen-ejecutiva-guadalajara`
-- WhatsApp diagnostic
+- `/colorimetria-ejecutiva`
 
 Live source URLs:
 
 - `https://imagencoach.com/servicios-asesoria-de-imagen-coaching/asesoria-de-imagen`
 - `https://imagencoach.com/imagen-presencia/beneficios-de-asesoria-de-imagen`
-- `https://imagencoach.com/imagen-presencia/la-importancia-de-tu-imagen-personal`
 - `https://imagencoach.com/imagen-presencia/imagen-profesional-segun-industria-y-personalidad`
 - `https://imagencoach.com/imagen-presencia/new-tu-guardarropa-te-refleja-o-te-limita`
-- `https://imagencoach.com/imagen-presencia/aprende-a-resaltar-tus-proporciones`
-
-### Cluster 2: Presencia Profesional
-
-Intent: leadership visibility, executive presence, confidence, and authority perception.
-
-Conversion targets:
-
-- `/coaching-presencia-profesional`
-- WhatsApp diagnostic
-
-Live source URLs:
-
-- `https://imagencoach.com/servicios-asesoria-de-imagen-coaching/coaching-de-imagen`
-- `https://imagencoach.com/imagen-presencia/presencia-profesional-estrategica`
-- `https://imagencoach.com/imagen-presencia/sostener-tu-siguiente-nivel-profesional`
-- `https://imagencoach.com/imagen-presencia/sostener-el-crecimiento`
-- `https://imagencoach.com/imagen-presencia/mas-dinero-capacidad-interna-liderazgo-presencia`
-
-### Cluster 3: Identidad y Autoconcepto
-
-Intent: differentiation layer; connects image to identity, self-perception, and internal alignment.
-
-Conversion targets:
-
-- `/coaching-presencia-profesional`
-- future `/identidad-profesional-autoconcepto`
-
-Live source URLs:
-
-- `https://imagencoach.com/imagen-presencia/amor-propio-estructura-interna-presencia-profesional`
-- `https://imagencoach.com/imagen-presencia/tu-autoconcepto-el-punto-de-partida-para-transformar-tu-imagen`
-- `https://imagencoach.com/imagen-presencia/transforma-tu-imagen-consciente`
-- `https://imagencoach.com/imagen-presencia/y-si-tu-imagen-no-fuera-un-disfraz-sino-una-puerta-para-regresar-a-ti-article`
-- `https://imagencoach.com/imagen-presencia/soltar-lo-que-ya-no-vibra-y-vestir-tu-verdad`
-
-### Cluster 4: Liderazgo y Percepción
-
-Intent: executive psychology and leadership trust.
-
-Conversion targets:
-
-- `/marca-personal-para-lideres`
-- `/coaching-presencia-profesional`
-
-Live source URLs:
-
-- `https://imagencoach.com/imagen-presencia/imagen-identidad-liderazgo`
-- `https://imagencoach.com/imagen-presencia/presencia-profesional-estrategica`
-- `https://imagencoach.com/imagen-presencia/sostener-tu-siguiente-nivel-profesional`
-- `https://imagencoach.com/imagen-presencia/tu-imagen-y-tu-negocio-una-conexion-mas-poderosa-de-lo-que-imaginas`
-
-### Cluster 5: Consultoría Empresarial
-
-Intent: enterprise workshops, corporate perception, customer-facing teams, organizational trust.
-
-Conversion targets:
-
-- `/consultoria-imagen-empresarial`
-- `/talleres-imagen-corporativa`
-
-Live source URLs:
-
-- `https://imagencoach.com/servicios-asesoria-de-imagen-coaching/talleres`
-- `https://imagencoach.com/imagen-presencia/como-mejorar-la-imagen-de-tus-colaboradores`
-- `https://imagencoach.com/imagen-presencia/manifiesta-tu-imagen-autenticar-talleres-de-verano-2025`
-- `https://imagencoach.com/imagen-presencia/tu-imagen-y-tu-negocio-una-conexion-mas-poderosa-de-lo-que-imaginas`
-
-### Cluster 6: Colorimetría Estratégica
-
-Intent: visual precision layer, but framed as executive/professional rather than fashion.
-
-Conversion targets:
-
-- `/colorimetria-ejecutiva`
-- `/asesoria-imagen-ejecutiva-guadalajara`
-
-Live source URLs:
-
 - `https://imagencoach.com/imagen-presencia/la-ciencia-del-color-en-tu-imagen`
-- `https://imagencoach.com/imagen-presencia/tu-color-tu-poder-el-impacto-de-la-colorimetria`
-- `https://imagencoach.com/imagen-presencia/descubre-el-poder-de-tu-rostro`
 
-### Cluster 7: Marca Personal Ejecutiva
+### Cluster 3: Marca Personal
 
-Intent: founders, consultants, directors, speakers, and visible professionals.
+Intent: CEOs, founders, consultants, directivos, speakers, leadership visibility, and professional reputation.
 
 Conversion targets:
 
@@ -194,9 +128,26 @@ Conversion targets:
 Live source URLs:
 
 - `https://imagencoach.com/imagen-presencia/rebranding-imagen-mentalidad-abundancia`
+- `https://imagencoach.com/imagen-presencia/tu-imagen-y-tu-negocio-una-conexion-mas-poderosa-de-lo-que-imaginas`
 - `https://imagencoach.com/imagen-presencia/imagen-identidad-liderazgo`
-- `https://imagencoach.com/imagen-presencia/sostener-tu-siguiente-nivel-profesional`
 - `https://imagencoach.com/imagen-presencia/como-puedo-ayudarte-hoy`
+
+### Cluster 4: Coaching e Identidad
+
+Intent: professional identity, autoconcept, internal alignment, visibility blocks, abundance, and leadership psychology.
+
+Conversion targets:
+
+- `/coaching-presencia-profesional`
+- WhatsApp diagnostic
+
+Live source URLs:
+
+- `https://imagencoach.com/imagen-presencia/amor-propio-estructura-interna-presencia-profesional`
+- `https://imagencoach.com/imagen-presencia/tu-autoconcepto-el-punto-de-partida-para-transformar-tu-imagen`
+- `https://imagencoach.com/imagen-presencia/mas-dinero-capacidad-interna-liderazgo-presencia`
+- `https://imagencoach.com/imagen-presencia/transforma-tu-imagen-consciente`
+- `https://imagencoach.com/imagen-presencia/y-si-tu-imagen-no-fuera-un-disfraz-sino-una-puerta-para-regresar-a-ti-article`
 
 ## Supporting Service Pages From Original Site
 
@@ -215,6 +166,5 @@ The homepage should remain the entity hub:
 1. Own `consultora de imagen ejecutiva en Guadalajara`.
 2. Surface the strategic category: executive presence, identity, perception, transformation.
 3. Show services as conversion paths.
-4. Show only flagship insights and the seven cluster map.
+4. Show only flagship insights and the four SEO cluster map.
 5. Avoid dumping the full article archive on the homepage.
-
