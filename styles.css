@@ -258,6 +258,11 @@ h1 {
   font-size: clamp(50px, 5.9vw, 84px);
 }
 
+.hero h1,
+.service-hero h1 {
+  margin-top: 22px;
+}
+
 h1 em,
 h2 em {
   display: block;
@@ -272,6 +277,15 @@ h2 em {
   color: var(--muted);
   font-size: clamp(17px, 1.45vw, 20px);
   line-height: 1.72;
+}
+
+.hero-lede p {
+  margin: 0 0 14px;
+}
+
+.hero-lede p:last-child {
+  margin-bottom: 0;
+  color: var(--espresso);
 }
 
 .trust-line {
