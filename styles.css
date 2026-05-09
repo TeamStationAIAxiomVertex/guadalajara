@@ -409,6 +409,33 @@ h2 em {
   line-height: 1.03;
 }
 
+.editorial-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.4vw, 19px);
+  line-height: 1.7;
+}
+
+.service-mode {
+  margin: 0 0 48px;
+  padding: 42px 0;
+  border-top: 1px solid var(--line);
+}
+
+.inline-quote {
+  min-height: 0;
+  margin: 26px 0;
+  padding: 0;
+  background: transparent;
+}
+
+.inline-quote p {
+  font-size: clamp(28px, 2.7vw, 40px);
+}
+
 .services,
 .audience,
 .local-seo,
