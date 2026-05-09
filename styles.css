@@ -1,18 +1,17 @@
 :root {
-  --bg: #f6f2ed;
-  --paper: #fffaf5;
-  --ink: #2b2623;
-  --muted: #746b64;
-  --quiet: #a99b91;
-  --line: #e4dbd3;
-  --soft: #efe8e1;
-  --bronze: #6e4b63;
-  --espresso: #2b2623;
-  --violet: #6e4b63;
-  --violet-soft: #eadfe7;
-  --taupe: #b7a79a;
-  --green: #365a46;
-  --green-soft: #e5ece6;
+  --bg: #f8f5f8;
+  --paper: #fffafd;
+  --ink: #252326;
+  --muted: #756d78;
+  --quiet: #9a8f9b;
+  --line: #e8dfe8;
+  --soft: #f1eaf3;
+  --bronze: #8c4799;
+  --espresso: #2f2733;
+  --violet: #8c4799;
+  --violet-soft: #eadfed;
+  --green: #205c40;
+  --green-soft: #e4eee8;
   --max: 1180px;
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --display: "Cormorant Garamond", Georgia, serif;
@@ -131,8 +130,8 @@ textarea {
   align-items: center;
   gap: 38px;
   padding: 22px max(26px, calc((100vw - var(--max)) / 2));
-  background: rgba(246, 242, 237, 0.9);
-  border-bottom: 1px solid rgba(228, 219, 211, 0.82);
+  background: rgba(248, 245, 248, 0.9);
+  border-bottom: 1px solid rgba(232, 223, 232, 0.82);
   backdrop-filter: blur(18px);
 }
 
@@ -195,12 +194,12 @@ textarea {
 
 .header-cta:hover,
 .btn.primary:hover {
-  background: #493f3a;
+  background: #453249;
 }
 
 .btn.secondary {
   color: var(--espresso);
-  background: rgba(255, 250, 245, 0.6);
+  background: rgba(255, 250, 253, 0.55);
   border-color: var(--line);
 }
 
@@ -311,8 +310,8 @@ h2 em {
   aspect-ratio: 16 / 10;
   min-height: auto;
   padding: 12px;
-  background: linear-gradient(135deg, rgba(110, 75, 99, 0.16), rgba(183, 167, 154, 0.18));
-  border: 1px solid rgba(228, 219, 211, 0.92);
+  background: linear-gradient(135deg, rgba(140, 71, 153, 0.18), rgba(32, 92, 64, 0.12));
+  border: 1px solid rgba(232, 223, 232, 0.92);
   border-radius: 4px;
 }
 
@@ -334,8 +333,8 @@ h2 em {
   gap: 14px;
   min-height: 60px;
   padding: 14px 16px;
-  background: rgba(255, 250, 245, 0.88);
-  border: 1px solid rgba(228, 219, 211, 0.92);
+  background: rgba(255, 250, 253, 0.86);
+  border: 1px solid rgba(232, 223, 232, 0.92);
   backdrop-filter: blur(12px);
   color: var(--muted);
   font-size: 13px;
@@ -367,7 +366,7 @@ h2 em {
   place-items: center;
   padding: 16px 12px;
   color: var(--espresso);
-  background: rgba(255, 250, 245, 0.62);
+  background: rgba(255, 250, 253, 0.58);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.35;
@@ -452,17 +451,17 @@ h2 em {
 .service-card {
   min-height: 350px;
   padding: 36px 30px 34px;
-  background: rgba(255, 250, 245, 0.55);
+  background: rgba(255, 250, 253, 0.5);
   border-right: 1px solid var(--line);
 }
 
 .service-card:nth-child(2) {
-  background: rgba(234, 223, 231, 0.38);
+  background: rgba(234, 223, 237, 0.42);
 }
 
 .service-card:nth-child(3),
 .service-card:nth-child(6) {
-  background: rgba(229, 236, 230, 0.5);
+  background: rgba(223, 233, 226, 0.5);
 }
 
 .service-card:nth-child(3n) {
@@ -567,7 +566,7 @@ blockquote cite {
 
 .advisor-media {
   padding: 12px;
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
 }
 
@@ -590,8 +589,8 @@ blockquote cite {
   height: 72px;
   margin-bottom: 28px;
   place-items: center;
-  background: rgba(234, 223, 231, 0.62);
-  border: 1px solid rgba(110, 75, 99, 0.2);
+  background: rgba(234, 223, 237, 0.62);
+  border: 1px solid rgba(140, 71, 153, 0.2);
 }
 
 .brand-symbol img {
@@ -610,8 +609,8 @@ blockquote cite {
 .credential-row span {
   padding: 9px 12px;
   color: var(--green);
-  background: rgba(229, 236, 230, 0.82);
-  border: 1px solid rgba(54, 90, 70, 0.13);
+  background: rgba(223, 233, 226, 0.8);
+  border: 1px solid rgba(32, 92, 64, 0.13);
   border-radius: 999px;
   font-size: 12px;
   font-weight: 600;
@@ -635,7 +634,7 @@ blockquote cite {
 .result-grid article {
   min-height: 390px;
   padding: 30px;
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
 }
 
 .result-grid blockquote {
@@ -679,7 +678,7 @@ blockquote {
   min-height: 280px;
   margin: 0;
   padding: 30px 26px;
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
 }
 
 blockquote p {
@@ -723,7 +722,7 @@ blockquote cite {
 .journal-feature article {
   min-height: 245px;
   padding: 28px;
-  background: rgba(255, 250, 245, 0.54);
+  background: rgba(255, 250, 253, 0.48);
   border: 1px solid var(--line);
 }
 
@@ -791,13 +790,13 @@ details[open] summary::after {
   gap: 12px 34px;
   margin-top: 24px;
   padding: 24px;
-  background: rgba(255, 250, 245, 0.48);
-  border: 1px solid rgba(228, 219, 211, 0.78);
+  background: rgba(255, 250, 253, 0.42);
+  border: 1px solid rgba(232, 223, 232, 0.78);
 }
 
 .article-list a {
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(228, 219, 211, 0.78);
+  border-bottom: 1px solid rgba(232, 223, 232, 0.78);
   font-size: 15px;
   line-height: 1.45;
 }
@@ -862,7 +861,7 @@ details[open] summary::after {
 }
 
 .final-cta h2 em {
-  color: #d9c8d3;
+  color: #d9c0df;
 }
 
 .contact {
@@ -895,7 +894,7 @@ details[open] summary::after {
 
 .service-aside {
   padding: 28px;
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
 }
 
@@ -968,7 +967,7 @@ details[open] summary::after {
   min-height: 140px;
   padding: 24px;
   color: var(--espresso);
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
   font-weight: 600;
 }
 
@@ -993,7 +992,7 @@ details[open] summary::after {
   display: grid;
   gap: 18px;
   padding: 26px;
-  background: rgba(255, 250, 245, 0.58);
+  background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
 }
 
