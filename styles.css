@@ -226,8 +226,8 @@ textarea {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.06fr) minmax(330px, 430px);
-  gap: clamp(52px, 7vw, 110px);
+  grid-template-columns: minmax(0, 0.95fr) minmax(430px, 560px);
+  gap: clamp(42px, 5vw, 76px);
   align-items: center;
   min-height: calc(100vh - 92px);
   padding: 62px 0 72px;
@@ -307,8 +307,9 @@ h2 em {
 .hero-media {
   position: relative;
   margin: 0;
-  align-self: stretch;
-  min-height: 610px;
+  align-self: center;
+  aspect-ratio: 16 / 10;
+  min-height: auto;
   padding: 12px;
   background: linear-gradient(135deg, rgba(110, 75, 99, 0.16), rgba(183, 167, 154, 0.18));
   border: 1px solid rgba(228, 219, 211, 0.92);
@@ -319,7 +320,7 @@ h2 em {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center center;
   filter: saturate(0.92) contrast(0.94) brightness(1.03);
 }
 
@@ -1113,7 +1114,7 @@ details[open] summary::after {
   }
 
   .hero-media {
-    min-height: 560px;
+    aspect-ratio: 16 / 10;
   }
 
   .section-heading {
@@ -1187,7 +1188,7 @@ details[open] summary::after {
   }
 
   .hero-media {
-    min-height: 470px;
+    aspect-ratio: 4 / 3;
   }
 
   .hero-media figcaption {
