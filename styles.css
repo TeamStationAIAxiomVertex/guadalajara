@@ -779,6 +779,42 @@ details[open] summary::after {
   line-height: 1.45;
 }
 
+.cluster-map {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.cluster-map article {
+  min-height: 210px;
+  padding: 22px 18px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.cluster-map span {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cluster-map h3 {
+  margin: 28px 0 12px;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+.cluster-map p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .final-cta {
   display: grid;
   justify-items: center;
@@ -1069,7 +1105,8 @@ details[open] summary::after {
   .quote-grid,
   .result-grid,
   .related-grid,
-  .journal-feature {
+  .journal-feature,
+  .cluster-map {
     grid-template-columns: 1fr;
   }
 
