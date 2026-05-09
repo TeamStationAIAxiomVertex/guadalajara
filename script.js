@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector(".nav-toggle");
 const form = document.querySelector("[data-form]");
+const whatsappNumber = "526646105348";
 
 navToggle?.addEventListener("click", () => {
   const isOpen = header.classList.toggle("is-open");
@@ -16,8 +17,19 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
 
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
+  const data = new FormData(form);
   const status = form.querySelector(".form-status");
-  status.textContent =
-    "Solicitud lista. Para producción, conecta este formulario a WhatsApp Business, email o CRM.";
-  form.reset();
+  const message = [
+    "Hola Sonia, me interesa una asesoría de imagen ejecutiva.",
+    "",
+    `Nombre: ${data.get("name") || ""}`,
+    `Teléfono: ${data.get("phone") || ""}`,
+    `Tipo de servicio: ${data.get("service") || ""}`,
+    `Persona o empresa: ${data.get("client_type") || ""}`,
+    `Quiero trabajar: ${data.get("message") || ""}`,
+  ].join("\n");
+  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  status.textContent = "Abriendo WhatsApp con tu mensaje listo para Sonia.";
+  window.open(url, "_blank", "noopener");
 });
