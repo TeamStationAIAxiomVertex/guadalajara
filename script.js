@@ -20,13 +20,14 @@ form?.addEventListener("submit", (event) => {
   const data = new FormData(form);
   const status = form.querySelector(".form-status");
   const message = [
-    "Hola Sonia, me interesa una asesoría de imagen ejecutiva.",
+    "Hola Sonia, quiero solicitar una asesoría.",
     "",
     `Nombre: ${data.get("name") || ""}`,
-    `Teléfono: ${data.get("phone") || ""}`,
+    `Email: ${data.get("email") || ""}`,
+    `Teléfono / WhatsApp: ${data.get("phone") || ""}`,
     `Tipo de servicio: ${data.get("service") || ""}`,
     `Persona o empresa: ${data.get("client_type") || ""}`,
-    `Quiero trabajar: ${data.get("message") || ""}`,
+    `¿Qué quiero trabajar?: ${data.get("message") || ""}`,
   ].join("\n");
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
