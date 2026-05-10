@@ -12,7 +12,9 @@
   --violet-soft: #f1e9f3;
   --green: #526f5e;
   --green-soft: #edf5ef;
-  --max: 1180px;
+  --max: 1200px;
+  --section-y: clamp(72px, 9vw, 118px);
+  --radius-card: 18px;
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --display: "Cormorant Garamond", Georgia, serif;
 }
@@ -189,7 +191,7 @@ textarea {
   justify-content: center;
   min-height: 46px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0 20px;
   font-size: 13px;
   font-weight: 600;
@@ -237,11 +239,11 @@ textarea {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(460px, 0.98fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 1fr);
   gap: clamp(36px, 5vw, 74px);
-  align-items: center;
-  min-height: auto;
-  padding: 72px 0 76px;
+  align-items: start;
+  min-height: min(calc(78vh - 92px), 660px);
+  padding: 42px 0 54px;
 }
 
 .eyebrow,
@@ -267,7 +269,7 @@ h2 {
 h1 {
   max-width: 640px;
   margin-top: 0;
-  font-size: clamp(46px, 4.55vw, 66px);
+  font-size: clamp(52px, 6vw, 84px);
 }
 
 .hero h1,
@@ -281,6 +283,15 @@ h2 em {
   color: var(--bronze);
   font-style: italic;
   font-weight: 500;
+}
+
+.anchor-line {
+  max-width: 52ch;
+  margin: 20px 0 0;
+  color: var(--espresso);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .hero-lede {
@@ -300,17 +311,6 @@ h2 em {
   color: var(--espresso);
 }
 
-.trust-line {
-  max-width: 640px;
-  margin: 22px 0 0;
-  padding: 16px 18px;
-  color: var(--green);
-  background: rgba(228, 238, 232, 0.54);
-  border: 1px solid rgba(32, 92, 64, 0.13);
-  font-size: 14px;
-  font-weight: 600;
-}
-
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -324,18 +324,19 @@ h2 em {
   align-self: stretch;
   aspect-ratio: 4 / 5;
   min-height: auto;
-  padding: 8px;
-  background: linear-gradient(135deg, rgba(147, 102, 156, 0.08), rgba(82, 111, 94, 0.06));
-  border: 1px solid rgba(238, 233, 239, 0.74);
-  border-radius: 4px;
+  padding: 0;
+  background: var(--soft);
+  border: 1px solid rgba(238, 233, 239, 0.9);
+  border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 .hero-media > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
-  filter: saturate(0.92) contrast(0.88) brightness(1.04);
+  object-position: center top;
+  filter: saturate(0.9) contrast(0.9) brightness(1.03);
 }
 
 .hero-media figcaption {
@@ -361,8 +362,9 @@ h2 em {
   opacity: 0.72;
 }
 
-.authority {
-  padding: 94px 0;
+.authority,
+.problem {
+  padding: var(--section-y) 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -398,22 +400,25 @@ h2 em {
 }
 
 .authority h2,
+.problem h2,
 .section-heading h2,
 .advisor h2,
 .testimonials h2,
 .journal h2,
 .contact h2 {
-  font-size: clamp(42px, 5.2vw, 72px);
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.08;
 }
 
 .authority p,
+.problem p,
 .advisor p,
 .journal-intro p,
 .contact-copy p {
   margin: 0 0 20px;
   color: var(--muted);
-  font-size: clamp(17px, 1.4vw, 19px);
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 .authority .statement {
@@ -430,8 +435,8 @@ h2 em {
   margin: 0;
   padding: 0;
   color: var(--muted);
-  font-size: clamp(17px, 1.4vw, 19px);
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 .signal-rows p {
@@ -465,7 +470,7 @@ h2 em {
 .journal,
 .faq,
 .contact {
-  padding: 112px 0;
+  padding: var(--section-y) 0;
 }
 
 .section-heading {
@@ -481,26 +486,26 @@ h2 em {
 }
 
 .services-intro {
-  max-width: 780px;
-  margin: -18px 0 46px auto;
+  max-width: 52ch;
+  margin: -12px 0 42px auto;
   color: var(--muted);
-  font-family: var(--display);
-  font-size: clamp(27px, 2.8vw, 41px);
-  line-height: 1.08;
+  font-family: var(--font);
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
 .service-card {
-  min-height: 350px;
-  padding: 36px 30px 34px;
-  background: rgba(255, 250, 253, 0.5);
-  border-right: 1px solid var(--line);
+  min-height: 315px;
+  padding: 30px 28px;
+  background: rgba(255, 254, 254, 0.62);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .service-card:nth-child(2) {
@@ -509,11 +514,11 @@ h2 em {
 
 .service-card:nth-child(3),
 .service-card:nth-child(6) {
-  background: rgba(223, 233, 226, 0.5);
+  background: rgba(241, 247, 243, 0.52);
 }
 
 .service-card:nth-child(3n) {
-  border-right: 0;
+  border-right: 1px solid var(--line);
 }
 
 .service-card:nth-child(n + 4) {
@@ -530,7 +535,7 @@ h2 em {
 .service-card h3,
 .audience-grid h3,
 .journal-feature h3 {
-  margin: 72px 0 16px;
+  margin: 50px 0 14px;
   color: var(--espresso);
   font-family: var(--font);
   font-size: 22px;
@@ -548,7 +553,7 @@ blockquote cite {
 
 .service-card .fit {
   margin-top: 18px;
-  color: var(--green);
+  color: var(--violet);
   font-size: 13px;
   font-weight: 600;
 }
@@ -567,15 +572,15 @@ blockquote cite {
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  gap: 16px;
 }
 
 .audience-grid article {
-  min-height: 270px;
-  padding: 26px;
+  min-height: 230px;
+  padding: 28px;
   background: rgba(255, 254, 254, 0.48);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .audience-grid h3 {
@@ -606,16 +611,18 @@ blockquote cite {
 
 .advisor {
   display: grid;
-  grid-template-columns: minmax(280px, 430px) minmax(0, 1fr);
-  gap: clamp(48px, 8vw, 110px);
+  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
+  gap: clamp(44px, 7vw, 88px);
   align-items: center;
   border-top: 1px solid var(--line);
 }
 
 .advisor-media {
-  padding: 8px;
+  padding: 0;
   background: rgba(255, 254, 254, 0.5);
   border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 .advisor-media img {
@@ -633,8 +640,8 @@ blockquote cite {
 
 .brand-symbol {
   display: inline-grid;
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   margin-bottom: 28px;
   place-items: center;
   background: rgba(234, 223, 237, 0.62);
@@ -642,8 +649,8 @@ blockquote cite {
 }
 
 .brand-symbol img {
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   opacity: 0.82;
 }
 
@@ -693,12 +700,17 @@ blockquote cite {
 
 .result-grid {
   grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background: transparent;
+  border: 0;
 }
 
 .result-grid article {
-  min-height: 390px;
+  min-height: 310px;
   padding: 30px;
   background: rgba(255, 250, 253, 0.54);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .result-grid blockquote {
@@ -784,10 +796,11 @@ blockquote cite {
 }
 
 .journal-feature article {
-  min-height: 245px;
+  min-height: 240px;
   padding: 28px;
   background: rgba(255, 250, 253, 0.48);
   border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .journal-feature span {
@@ -839,10 +852,10 @@ details {
 summary {
   cursor: pointer;
   color: var(--espresso);
-  font-family: var(--display);
-  font-size: clamp(28px, 3vw, 42px);
-  font-weight: 500;
-  line-height: 1;
+  font-family: var(--font);
+  font-size: clamp(18px, 2vw, 23px);
+  font-weight: 600;
+  line-height: 1.25;
   list-style: none;
 }
 
@@ -1109,9 +1122,11 @@ details[open] summary::after {
 .contact-portrait {
   max-width: 300px;
   margin: 34px 0 0;
-  padding: 10px;
+  padding: 0;
   background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  overflow: hidden;
 }
 
 .contact-portrait img {
@@ -1127,6 +1142,7 @@ details[open] summary::after {
   padding: 26px;
   background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .contact-form label {
@@ -1142,7 +1158,7 @@ details[open] summary::after {
 .contact-form textarea {
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 0;
+  border-radius: 10px;
   padding: 13px 14px;
   color: var(--ink);
   background: rgba(255, 253, 255, 0.72);
@@ -1247,7 +1263,7 @@ details[open] summary::after {
   }
 
   .hero-media {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 5;
   }
 
   .section-heading {
@@ -1303,10 +1319,11 @@ details[open] summary::after {
   }
 
   h1 {
-    font-size: clamp(44px, 13vw, 62px);
+    font-size: clamp(42px, 12vw, 52px);
   }
 
   .authority h2,
+  .problem h2,
   .local-seo h2,
   .service-detail h2,
   .service-faq h2,
@@ -1317,11 +1334,11 @@ details[open] summary::after {
   .journal h2,
   .faq h2,
   .contact h2 {
-    font-size: clamp(38px, 12vw, 58px);
+    font-size: clamp(32px, 10vw, 40px);
   }
 
   .hero-media {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 5;
   }
 
   .hero-media figcaption {
@@ -1331,6 +1348,7 @@ details[open] summary::after {
   }
 
   .authority,
+  .problem,
   .services,
   .audience,
   .advisor,

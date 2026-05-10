@@ -18,17 +18,13 @@ This rebuild uses `docs/sonia-site/raw-crawl/imagencoach/` as the source corpus.
 
 ## Editorial Sources
 
-The homepage publication library uses the crawled `imagen-presencia-*.md` pages and groups them into four visible clusters:
-
-- Presence, identity and leadership.
-- Integral image, style and wardrobe.
-- Colorimetry, face and proportions.
-- Companies, workshops, mindset and abundance.
+The crawled `imagen-presencia-*.md` pages remain the editorial corpus, but the homepage must not expose the full archive, cluster labels, or taxonomy. The homepage uses only a compact publication preview and leaves the deeper corpus for future article or journal pages.
 
 ## Design Guardrails Applied
 
 - Low contrast lavender/green palette, avoiding brown, harsh black, neon and high contrast.
 - Cormorant Garamond headings with Inter body copy.
 - Sonia logo and `sonia-icon.svg` used in header, hero, about, CTA and favicon.
-- Source copy segmented into rows, service cards, editorial clusters and FAQ instead of long unstructured paragraphs.
+- Source copy segmented into rows, service cards, publication previews and FAQ instead of long unstructured paragraphs.
 - No visible bullet markers in the homepage body.
+- No public cluster labels or article archive dump on the homepage.
