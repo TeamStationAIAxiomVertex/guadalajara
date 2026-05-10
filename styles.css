@@ -526,6 +526,69 @@ h2 em {
   line-height: 1.6;
 }
 
+.modalidades-block {
+  margin: 0 0 28px;
+  padding: 26px;
+  background: rgba(255, 254, 254, 0.5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+}
+
+.modalidades-heading {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.46fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.modalidades-heading h3 {
+  margin: 0;
+  color: var(--charcoal-soft);
+  font-family: var(--display);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 500;
+  line-height: 1.03;
+}
+
+.modalidades-heading p {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.modalidades-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.modalidades-grid article {
+  min-height: 158px;
+  padding: 22px;
+  background: rgba(250, 248, 251, 0.68);
+  border: 1px solid rgba(238, 233, 239, 0.86);
+  border-radius: calc(var(--radius-card) - 4px);
+}
+
+.modalidades-grid h4 {
+  margin: 0 0 14px;
+  color: var(--charcoal-soft);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.18;
+}
+
+.modalidades-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.56;
+}
+
 .service-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1296,6 +1359,11 @@ details[open] summary::after {
     gap: 18px;
   }
 
+  .modalidades-heading {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .service-list,
   .audience-grid,
   .recognition-grid,
@@ -1325,6 +1393,12 @@ details[open] summary::after {
 
   .service-card h3 {
     margin-top: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalidades-grid {
+    grid-template-columns: 1fr;
   }
 }
 
