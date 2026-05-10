@@ -6,12 +6,10 @@
   --quiet: #b3aab4;
   --line: #eee9ef;
   --soft: #f7f1f8;
-  --bronze: #93669c;
-  --espresso: #5a5060;
+  --plum-accent: #93669c;
+  --charcoal-soft: #5a5060;
   --violet: #93669c;
   --violet-soft: #f1e9f3;
-  --green: #526f5e;
-  --green-soft: #edf5ef;
   --max: 1200px;
   --section-y: clamp(72px, 9vw, 118px);
   --radius-card: 18px;
@@ -80,6 +78,7 @@ body {
   color: var(--ink);
   background: var(--bg);
   font-family: var(--font);
+  font-size: 17px;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -97,8 +96,13 @@ a {
 
 button,
 input,
+select,
 textarea {
   font: inherit;
+}
+
+p {
+  max-width: 52ch;
 }
 
 .skip-link,
@@ -119,7 +123,7 @@ textarea {
   height: auto;
   padding: 12px 16px;
   clip: auto;
-  background: var(--espresso);
+  background: var(--charcoal-soft);
   color: var(--paper);
 }
 
@@ -181,7 +185,7 @@ textarea {
 .contact-links a:hover,
 .journal-feature a:hover,
 .article-list a:hover {
-  color: var(--bronze);
+  color: var(--plum-accent);
 }
 
 .header-cta,
@@ -201,9 +205,9 @@ textarea {
 
 .header-cta,
 .btn.primary {
-  background: var(--espresso);
+  background: var(--charcoal-soft);
   color: var(--paper);
-  border-color: var(--espresso);
+  border-color: var(--charcoal-soft);
 }
 
 .header-cta:hover,
@@ -212,18 +216,18 @@ textarea {
 }
 
 .btn.secondary {
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   background: rgba(255, 250, 253, 0.55);
   border-color: var(--line);
 }
 
 .btn.secondary:hover {
-  border-color: var(--bronze);
-  color: var(--bronze);
+  border-color: var(--plum-accent);
+  color: var(--plum-accent);
 }
 
 .btn.light {
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   background: var(--paper);
   border-color: var(--paper);
 }
@@ -249,7 +253,7 @@ textarea {
 .eyebrow,
 .section-label {
   margin: 0;
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -280,22 +284,22 @@ h1 {
 h1 em,
 h2 em {
   display: block;
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-style: italic;
   font-weight: 500;
 }
 
 .anchor-line {
-  max-width: 52ch;
+  max-width: 46ch;
   margin: 20px 0 0;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-size: 17px;
   font-weight: 500;
   line-height: 1.6;
 }
 
 .hero-lede {
-  max-width: 650px;
+  max-width: 46ch;
   margin: 30px 0 0;
   color: var(--muted);
   font-size: clamp(16px, 1.2vw, 18px);
@@ -308,7 +312,7 @@ h2 em {
 
 .hero-lede p:last-child {
   margin-bottom: 0;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
 }
 
 .actions {
@@ -382,7 +386,7 @@ h2 em {
   min-height: 86px;
   place-items: center;
   padding: 16px 12px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   background: rgba(255, 250, 253, 0.58);
   font-size: 12px;
   font-weight: 600;
@@ -397,6 +401,32 @@ h2 em {
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.9fr);
   gap: clamp(42px, 7vw, 104px);
   margin-top: 28px;
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 46px;
+}
+
+.recognition-grid article {
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.recognition-grid h3 {
+  margin: 0 0 14px;
+  color: var(--charcoal-soft);
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.recognition-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .authority h2,
@@ -423,7 +453,7 @@ h2 em {
 
 .authority .statement {
   margin-top: 28px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-family: var(--display);
   font-size: clamp(28px, 3vw, 42px);
   line-height: 1.03;
@@ -496,12 +526,12 @@ h2 em {
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
 .service-card {
-  min-height: 315px;
+  min-height: 285px;
   padding: 30px 28px;
   background: rgba(255, 254, 254, 0.62);
   border: 1px solid var(--line);
@@ -514,7 +544,7 @@ h2 em {
 
 .service-card:nth-child(3),
 .service-card:nth-child(6) {
-  background: rgba(241, 247, 243, 0.52);
+  background: rgba(255, 254, 254, 0.58);
 }
 
 .service-card:nth-child(3n) {
@@ -526,7 +556,7 @@ h2 em {
 }
 
 .service-card span {
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-family: var(--display);
   font-size: 34px;
   line-height: 1;
@@ -536,7 +566,7 @@ h2 em {
 .audience-grid h3,
 .journal-feature h3 {
   margin: 50px 0 14px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-family: var(--font);
   font-size: 22px;
   font-weight: 600;
@@ -551,18 +581,11 @@ blockquote cite {
   color: var(--muted);
 }
 
-.service-card .fit {
-  margin-top: 18px;
-  color: var(--violet);
-  font-size: 13px;
-  font-weight: 600;
-}
-
 .service-card a {
   display: inline-flex;
   margin-top: 24px;
-  color: var(--espresso);
-  border-bottom: 1px solid var(--bronze);
+  color: var(--charcoal-soft);
+  border-bottom: 1px solid var(--plum-accent);
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -679,14 +702,21 @@ blockquote cite {
 
 .credential-row span {
   padding: 9px 12px;
-  color: var(--green);
-  background: rgba(223, 233, 226, 0.8);
-  border: 1px solid rgba(32, 92, 64, 0.13);
+  color: var(--violet);
+  background: rgba(234, 223, 237, 0.66);
+  border: 1px solid rgba(140, 71, 153, 0.16);
   border-radius: 999px;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.credential-line {
+  margin-top: 22px;
+  color: var(--charcoal-soft);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .quote-grid,
@@ -727,7 +757,7 @@ blockquote cite {
 .result-grid span {
   display: inline-block;
   margin: 24px 0 8px;
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -746,7 +776,7 @@ blockquote cite {
 .result-grid strong {
   display: block;
   margin-top: 26px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-size: 13px;
 }
 
@@ -759,7 +789,7 @@ blockquote {
 
 blockquote p {
   margin: 0;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-family: var(--display);
   font-size: clamp(28px, 2.7vw, 40px);
   line-height: 1.02;
@@ -804,7 +834,7 @@ blockquote cite {
 }
 
 .journal-feature span {
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -818,12 +848,17 @@ blockquote cite {
 .journal-feature a {
   display: inline-flex;
   margin-top: 10px;
-  color: var(--espresso);
-  border-bottom: 1px solid var(--bronze);
+  color: var(--charcoal-soft);
+  border-bottom: 1px solid var(--plum-accent);
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.journal-feature.single {
+  grid-template-columns: minmax(0, 680px) auto;
+  align-items: end;
 }
 
 .library-shell {
@@ -845,13 +880,16 @@ blockquote cite {
 }
 
 details {
-  border-bottom: 1px solid var(--line);
-  padding: 28px 0;
+  margin-bottom: 12px;
+  padding: 22px 24px;
+  background: rgba(255, 254, 254, 0.58);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 summary {
   cursor: pointer;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-family: var(--font);
   font-size: clamp(18px, 2vw, 23px);
   font-weight: 600;
@@ -866,7 +904,7 @@ summary::-webkit-details-marker {
 summary::after {
   content: "+";
   float: right;
-  color: var(--bronze);
+  color: var(--plum-accent);
   font-family: var(--font);
   font-size: 26px;
 }
@@ -907,7 +945,7 @@ details[open] summary::after {
 }
 
 .cluster-map span {
-  color: var(--green);
+  color: var(--violet);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -934,7 +972,7 @@ details[open] summary::after {
   gap: 30px;
   padding: 82px clamp(24px, 7vw, 92px);
   color: var(--ink);
-  background: linear-gradient(135deg, rgba(241, 233, 243, 0.88), rgba(237, 245, 239, 0.78));
+  background: linear-gradient(135deg, rgba(241, 233, 243, 0.88), rgba(250, 248, 251, 0.9));
   border: 1px solid var(--line);
   text-align: center;
 }
@@ -1073,7 +1111,7 @@ details[open] summary::after {
 .service-detail .statement {
   margin: 22px 0 0;
   padding-top: 20px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   border-top: 1px solid rgba(140, 71, 153, 0.2);
   font-family: var(--display);
   font-size: clamp(25px, 2.4vw, 36px);
@@ -1097,7 +1135,7 @@ details[open] summary::after {
 .related-grid a {
   min-height: 140px;
   padding: 24px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   background: rgba(255, 250, 253, 0.54);
   font-weight: 600;
 }
@@ -1115,7 +1153,7 @@ details[open] summary::after {
   flex-wrap: wrap;
   gap: 18px;
   margin-top: 30px;
-  color: var(--espresso);
+  color: var(--charcoal-soft);
   font-weight: 600;
 }
 
@@ -1151,13 +1189,13 @@ details[open] summary::after {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--bronze);
+  border-color: var(--plum-accent);
 }
 
 .form-status {
   min-height: 22px;
   margin: 0;
-  color: var(--green);
+  color: var(--violet);
   font-size: 13px;
 }
 
@@ -1201,7 +1239,7 @@ details[open] summary::after {
     display: block;
     width: 18px;
     height: 1px;
-    background: var(--espresso);
+    background: var(--charcoal-soft);
   }
 
   .site-nav {
@@ -1256,10 +1294,12 @@ details[open] summary::after {
 
   .service-list,
   .audience-grid,
+  .recognition-grid,
   .quote-grid,
   .result-grid,
   .related-grid,
   .journal-feature,
+  .journal-feature.single,
   .cluster-map {
     grid-template-columns: 1fr;
   }
@@ -1285,6 +1325,10 @@ details[open] summary::after {
 }
 
 @media (max-width: 680px) {
+  body {
+    font-size: 16px;
+  }
+
   .section {
     width: min(100% - 32px, var(--max));
   }
