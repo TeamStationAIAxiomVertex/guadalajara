@@ -1,18 +1,18 @@
 :root {
-  --bg: #faf8fb;
-  --paper: #fffefe;
-  --ink: #3c3841;
-  --muted: #857c86;
-  --quiet: #b3aab4;
-  --line: #eee9ef;
-  --soft: #f7f1f8;
-  --plum-accent: #93669c;
-  --charcoal-soft: #5a5060;
-  --violet: #93669c;
-  --violet-soft: #f1e9f3;
+  --bg: #f9f7fb;
+  --paper: #ffffff;
+  --ink: #312c36;
+  --muted: #6f6874;
+  --quiet: #9b93a0;
+  --line: #ded5e1;
+  --soft: #f3eff6;
+  --plum-accent: #82598d;
+  --charcoal-soft: #514857;
+  --violet: #82598d;
+  --violet-soft: #eee6f1;
   --max: 1200px;
-  --section-y: clamp(48px, 6vw, 78px);
-  --radius-card: 18px;
+  --section-y: clamp(60px, 7vw, 96px);
+  --radius-card: 12px;
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --display: "Cormorant Garamond", Georgia, serif;
 }
@@ -136,8 +136,8 @@ p {
   align-items: center;
   gap: 38px;
   padding: 22px max(26px, calc((100vw - var(--max)) / 2));
-  background: rgba(248, 245, 248, 0.9);
-  border-bottom: 1px solid rgba(232, 223, 232, 0.82);
+  background: rgba(249, 247, 251, 0.92);
+  border-bottom: 1px solid rgba(222, 213, 225, 0.94);
   backdrop-filter: blur(18px);
 }
 
@@ -158,7 +158,7 @@ p {
   width: 28px;
   height: 28px;
   background: currentColor;
-  opacity: 0.72;
+  opacity: 0.82;
   mask: url("assets/sonia-icon.svg") center / contain no-repeat;
   -webkit-mask: url("assets/sonia-icon.svg") center / contain no-repeat;
 }
@@ -167,7 +167,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-  color: var(--muted);
+  color: var(--charcoal-soft);
   font-size: 13px;
   font-weight: 500;
 }
@@ -195,7 +195,7 @@ p {
   justify-content: center;
   min-height: 46px;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 0 20px;
   font-size: 13px;
   font-weight: 600;
@@ -212,12 +212,12 @@ p {
 
 .header-cta:hover,
 .btn.primary:hover {
-  background: #65566b;
+  background: #64536a;
 }
 
 .btn.secondary {
   color: var(--charcoal-soft);
-  background: rgba(255, 250, 253, 0.55);
+  background: rgba(255, 255, 255, 0.66);
   border-color: var(--line);
 }
 
@@ -247,7 +247,7 @@ p {
   gap: clamp(36px, 5vw, 74px);
   align-items: center;
   min-height: auto;
-  padding: 38px 0 46px;
+  padding: 52px 0 58px;
 }
 
 .eyebrow,
@@ -298,6 +298,20 @@ h2 em {
   line-height: 1.6;
 }
 
+.area-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 46ch;
+  margin: 14px 0 0;
+  color: var(--charcoal-soft);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .hero-lede {
   max-width: 46ch;
   margin: 30px 0 0;
@@ -330,7 +344,7 @@ h2 em {
   min-height: auto;
   padding: 0;
   background: var(--soft);
-  border: 1px solid rgba(238, 233, 239, 0.9);
+  border: 1px solid rgba(222, 213, 225, 0.95);
   border-radius: var(--radius-card);
   overflow: hidden;
 }
@@ -411,14 +425,26 @@ h2 em {
 }
 
 .recognition-grid article {
-  padding: 22px 24px;
-  background: rgba(255, 254, 254, 0.5);
+  padding: 24px 24px 26px;
+  background: rgba(255, 255, 255, 0.62);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
 
+.area-line img,
+.card-icon {
+  width: 21px;
+  height: 21px;
+  opacity: 0.62;
+  filter: invert(35%) sepia(15%) saturate(875%) hue-rotate(240deg) brightness(90%) contrast(88%);
+}
+
+.card-icon {
+  margin-bottom: 16px;
+}
+
 .recognition-grid h3 {
-  margin: 0 0 14px;
+  margin: 16px 0 14px;
   color: var(--charcoal-soft);
   font-size: 19px;
   line-height: 1.2;
@@ -529,7 +555,7 @@ h2 em {
 .modalidades-block {
   margin: 0 0 28px;
   padding: 26px;
-  background: rgba(255, 254, 254, 0.5);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
@@ -569,13 +595,13 @@ h2 em {
 .modalidades-grid article {
   min-height: 158px;
   padding: 22px;
-  background: rgba(250, 248, 251, 0.68);
-  border: 1px solid rgba(238, 233, 239, 0.86);
+  background: rgba(249, 247, 251, 0.78);
+  border: 1px solid rgba(222, 213, 225, 0.92);
   border-radius: calc(var(--radius-card) - 4px);
 }
 
 .modalidades-grid h4 {
-  margin: 0 0 14px;
+  margin: 16px 0 14px;
   color: var(--charcoal-soft);
   font-size: 18px;
   font-weight: 600;
@@ -598,18 +624,18 @@ h2 em {
 .service-card {
   min-height: 236px;
   padding: 24px;
-  background: rgba(255, 254, 254, 0.62);
+  background: rgba(255, 255, 255, 0.66);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
 
 .service-card:nth-child(2) {
-  background: rgba(234, 223, 237, 0.42);
+  background: rgba(238, 230, 241, 0.5);
 }
 
 .service-card:nth-child(3),
 .service-card:nth-child(6) {
-  background: rgba(255, 254, 254, 0.58);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .service-card:nth-child(3n) {
@@ -621,16 +647,28 @@ h2 em {
 }
 
 .service-card span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: var(--plum-accent);
-  font-family: var(--display);
-  font-size: 28px;
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 700;
   line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.service-card span .card-icon {
+  width: 18px;
+  height: 18px;
+  margin: 0;
 }
 
 .service-card h3,
 .audience-grid h3,
 .journal-feature h3 {
-  margin: 28px 0 12px;
+  margin: 24px 0 12px;
   color: var(--charcoal-soft);
   font-family: var(--font);
   font-size: 22px;
@@ -668,13 +706,13 @@ blockquote cite {
 .audience-grid article {
   min-height: 170px;
   padding: 24px;
-  background: rgba(255, 254, 254, 0.48);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
 
 .audience-grid h3 {
-  margin: 0 0 18px;
+  margin: 16px 0 18px;
   font-size: 19px;
 }
 
@@ -709,7 +747,7 @@ blockquote cite {
 
 .advisor-media {
   padding: 0;
-  background: rgba(255, 254, 254, 0.5);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
   overflow: hidden;
@@ -734,8 +772,9 @@ blockquote cite {
   height: 56px;
   margin-bottom: 18px;
   place-items: center;
-  background: rgba(234, 223, 237, 0.62);
-  border: 1px solid rgba(140, 71, 153, 0.2);
+  background: rgba(238, 230, 241, 0.72);
+  border: 1px solid rgba(130, 89, 141, 0.24);
+  border-radius: 8px;
 }
 
 .brand-symbol img {
@@ -805,7 +844,7 @@ blockquote cite {
 .result-grid article {
   min-height: 260px;
   padding: 24px;
-  background: rgba(255, 250, 253, 0.54);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
@@ -895,7 +934,7 @@ blockquote cite {
 .journal-feature article {
   min-height: 210px;
   padding: 24px;
-  background: rgba(255, 250, 253, 0.48);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
@@ -949,7 +988,7 @@ blockquote cite {
 details {
   margin-bottom: 12px;
   padding: 22px 24px;
-  background: rgba(255, 254, 254, 0.58);
+  background: rgba(255, 255, 255, 0.58);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
@@ -1228,7 +1267,7 @@ details[open] summary::after {
   display: grid;
   gap: 18px;
   padding: 26px;
-  background: rgba(255, 250, 253, 0.54);
+  background: rgba(255, 255, 255, 0.62);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
 }
@@ -1246,10 +1285,10 @@ details[open] summary::after {
 .contact-form textarea {
   width: 100%;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 13px 14px;
   color: var(--ink);
-  background: rgba(255, 253, 255, 0.72);
+  background: rgba(255, 255, 255, 0.78);
   outline: none;
 }
 
@@ -1392,7 +1431,7 @@ details[open] summary::after {
   }
 
   .service-card h3 {
-    margin-top: 64px;
+    margin-top: 24px;
   }
 }
 
