@@ -225,7 +225,7 @@ textarea {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 0.74fr);
   gap: clamp(34px, 4vw, 58px);
   align-items: start;
   min-height: auto;
@@ -307,7 +307,7 @@ h2 em {
   position: relative;
   margin: 0;
   align-self: start;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 2 / 3;
   min-height: auto;
   padding: 12px;
   background: linear-gradient(135deg, rgba(140, 71, 153, 0.18), rgba(32, 92, 64, 0.12));
