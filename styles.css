@@ -1,17 +1,17 @@
 :root {
-  --bg: #f8f5f8;
-  --paper: #fffafd;
-  --ink: #252326;
-  --muted: #756d78;
-  --quiet: #9a8f9b;
-  --line: #e8dfe8;
-  --soft: #f1eaf3;
-  --bronze: #8c4799;
-  --espresso: #2f2733;
-  --violet: #8c4799;
-  --violet-soft: #eadfed;
-  --green: #205c40;
-  --green-soft: #e4eee8;
+  --bg: #faf7fa;
+  --paper: #fffdfd;
+  --ink: #3b363f;
+  --muted: #817783;
+  --quiet: #aaa0ac;
+  --line: #eee7ef;
+  --soft: #f5eff6;
+  --bronze: #9a6aa3;
+  --espresso: #514657;
+  --violet: #9a6aa3;
+  --violet-soft: #f0e7f1;
+  --green: #456d58;
+  --green-soft: #eaf3ed;
   --max: 1180px;
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --display: "Cormorant Garamond", Georgia, serif;
@@ -206,7 +206,7 @@ textarea {
 
 .header-cta:hover,
 .btn.primary:hover {
-  background: #453249;
+  background: #65566b;
 }
 
 .btn.secondary {
@@ -325,8 +325,8 @@ h2 em {
   aspect-ratio: 2 / 3;
   min-height: auto;
   padding: 12px;
-  background: linear-gradient(135deg, rgba(140, 71, 153, 0.18), rgba(32, 92, 64, 0.12));
-  border: 1px solid rgba(232, 223, 232, 0.92);
+  background: linear-gradient(135deg, rgba(154, 106, 163, 0.1), rgba(69, 109, 88, 0.08));
+  border: 1px solid rgba(238, 231, 239, 0.92);
   border-radius: 4px;
 }
 
@@ -335,7 +335,7 @@ h2 em {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  filter: saturate(0.92) contrast(0.94) brightness(1.03);
+  filter: saturate(0.88) contrast(0.9) brightness(1.04);
 }
 
 .hero-media figcaption {
@@ -348,8 +348,8 @@ h2 em {
   gap: 14px;
   min-height: 60px;
   padding: 14px 16px;
-  background: rgba(255, 250, 253, 0.86);
-  border: 1px solid rgba(232, 223, 232, 0.92);
+  background: rgba(255, 253, 253, 0.84);
+  border: 1px solid rgba(238, 231, 239, 0.88);
   backdrop-filter: blur(12px);
   color: var(--muted);
   font-size: 13px;
@@ -624,7 +624,7 @@ blockquote cite {
   height: auto;
   object-fit: cover;
   object-position: center top;
-  filter: saturate(0.9) contrast(0.94) brightness(1.03);
+  filter: saturate(0.88) contrast(0.9) brightness(1.04);
 }
 
 .advisor-copy h2 {
