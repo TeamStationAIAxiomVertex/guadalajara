@@ -138,11 +138,23 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 14px;
 }
 
 .brand img {
   width: 188px;
   height: auto;
+}
+
+.brand::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: currentColor;
+  opacity: 0.72;
+  mask: url("assets/sonia-icon.svg") center / contain no-repeat;
+  -webkit-mask: url("assets/sonia-icon.svg") center / contain no-repeat;
 }
 
 .site-nav {
@@ -777,7 +789,13 @@ blockquote cite {
 }
 
 .library-shell {
+  margin-top: 64px;
+  padding-top: 64px;
   border-top: 1px solid var(--line);
+}
+
+.article-cluster {
+  padding: 20px 0;
 }
 
 details {
