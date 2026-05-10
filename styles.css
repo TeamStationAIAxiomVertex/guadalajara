@@ -11,7 +11,7 @@
   --violet: #93669c;
   --violet-soft: #f1e9f3;
   --max: 1200px;
-  --section-y: clamp(72px, 9vw, 118px);
+  --section-y: clamp(48px, 6vw, 78px);
   --radius-card: 18px;
   --font: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --display: "Cormorant Garamond", Georgia, serif;
@@ -245,9 +245,9 @@ p {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(420px, 1fr);
   gap: clamp(36px, 5vw, 74px);
-  align-items: start;
-  min-height: min(calc(78vh - 92px), 660px);
-  padding: 42px 0 54px;
+  align-items: center;
+  min-height: auto;
+  padding: 38px 0 46px;
 }
 
 .eyebrow,
@@ -406,13 +406,15 @@ h2 em {
 .recognition-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 46px;
+  gap: 18px;
+  margin-top: 34px;
 }
 
 .recognition-grid article {
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
+  padding: 22px 24px;
+  background: rgba(255, 254, 254, 0.5);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
 }
 
 .recognition-grid h3 {
@@ -425,8 +427,8 @@ h2 em {
 .recognition-grid p {
   margin: 0;
   color: var(--muted);
-  font-size: 16px;
-  line-height: 1.62;
+  font-size: 15px;
+  line-height: 1.58;
 }
 
 .authority h2,
@@ -483,13 +485,13 @@ h2 em {
 
 .inline-quote {
   min-height: 0;
-  margin: 26px 0;
+  margin: 18px 0;
   padding: 0;
   background: transparent;
 }
 
 .inline-quote p {
-  font-size: clamp(28px, 2.7vw, 40px);
+  font-size: clamp(24px, 2.3vw, 34px);
 }
 
 .services,
@@ -506,9 +508,9 @@ h2 em {
 .section-heading {
   display: grid;
   grid-template-columns: 0.46fr minmax(0, 1fr);
-  gap: 58px;
+  gap: 38px;
   align-items: start;
-  margin-bottom: 48px;
+  margin-bottom: 34px;
 }
 
 .section-heading.compact {
@@ -517,7 +519,7 @@ h2 em {
 
 .services-intro {
   max-width: 52ch;
-  margin: -12px 0 42px auto;
+  margin: -8px 0 30px auto;
   color: var(--muted);
   font-family: var(--font);
   font-size: 18px;
@@ -531,8 +533,8 @@ h2 em {
 }
 
 .service-card {
-  min-height: 285px;
-  padding: 30px 28px;
+  min-height: 236px;
+  padding: 24px;
   background: rgba(255, 254, 254, 0.62);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
@@ -558,14 +560,14 @@ h2 em {
 .service-card span {
   color: var(--plum-accent);
   font-family: var(--display);
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1;
 }
 
 .service-card h3,
 .audience-grid h3,
 .journal-feature h3 {
-  margin: 50px 0 14px;
+  margin: 28px 0 12px;
   color: var(--charcoal-soft);
   font-family: var(--font);
   font-size: 22px;
@@ -579,6 +581,8 @@ h2 em {
 .article-list a,
 blockquote cite {
   color: var(--muted);
+  font-size: 15px;
+  line-height: 1.58;
 }
 
 .service-card a {
@@ -599,8 +603,8 @@ blockquote cite {
 }
 
 .audience-grid article {
-  min-height: 230px;
-  padding: 28px;
+  min-height: 170px;
+  padding: 24px;
   background: rgba(255, 254, 254, 0.48);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
@@ -634,8 +638,8 @@ blockquote cite {
 
 .advisor {
   display: grid;
-  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
-  gap: clamp(44px, 7vw, 88px);
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  gap: clamp(34px, 6vw, 68px);
   align-items: center;
   border-top: 1px solid var(--line);
 }
@@ -658,14 +662,14 @@ blockquote cite {
 }
 
 .advisor-copy h2 {
-  margin: 22px 0 30px;
+  margin: 18px 0 22px;
 }
 
 .brand-symbol {
   display: inline-grid;
   width: 56px;
   height: 56px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   place-items: center;
   background: rgba(234, 223, 237, 0.62);
   border: 1px solid rgba(140, 71, 153, 0.2);
@@ -736,8 +740,8 @@ blockquote cite {
 }
 
 .result-grid article {
-  min-height: 310px;
-  padding: 30px;
+  min-height: 260px;
+  padding: 24px;
   background: rgba(255, 250, 253, 0.54);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
@@ -822,12 +826,12 @@ blockquote cite {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin: 48px 0 34px;
+  margin: 32px 0 22px;
 }
 
 .journal-feature article {
-  min-height: 240px;
-  padding: 28px;
+  min-height: 210px;
+  padding: 24px;
   background: rgba(255, 250, 253, 0.48);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
@@ -842,7 +846,7 @@ blockquote cite {
 }
 
 .journal-feature h3 {
-  margin: 54px 0 14px;
+  margin: 28px 0 12px;
 }
 
 .journal-feature a {
