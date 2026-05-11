@@ -26,7 +26,7 @@ export const routes = [
     file: "index.html",
     title: "Consultora de Imagen en Guadalajara | Sonia McRorey",
     description:
-      "Asesoría de imagen, coaching de presencia y talleres para líderes, profesionistas y empresas en Guadalajara con Sonia McRorey.",
+      "Asesoría de imagen, coaching de presencia y talleres para líderes, profesionistas y empresas en Guadalajara, Zapopan y en línea con Sonia McRorey.",
     image: `${SITE_URL}/assets/sonia-twitter-card.png`,
     h1: "Consultora de imagen en Guadalajara",
     schema: ["Organization", "WebSite", "WebPage", "FAQPage", "HowTo"],
@@ -39,7 +39,7 @@ export const routes = [
     file: "asesoria-imagen-ejecutiva-guadalajara/index.html",
     title: "Asesoría de Imagen Ejecutiva en Guadalajara | Sonia McRorey",
     description:
-      "Proceso de asesoría de imagen integral para alinear presencia, estilo, color, guardarropa y decisiones profesionales en Guadalajara.",
+      "Asesoría de imagen integral para alinear presencia, estilo, color, guardarropa y decisiones profesionales en Guadalajara y en línea con Sonia.",
     image: `${SITE_URL}/assets/social-card-asesoria-imagen-ejecutiva.png`,
     h1: "Asesoría de Imagen Ejecutiva en Guadalajara",
     schema: ["Service", "ProfessionalService", "WebPage", "BreadcrumbList", "FAQPage", "HowTo"],
@@ -51,7 +51,7 @@ export const routes = [
     file: "coaching-presencia-profesional/index.html",
     title: "Coaching de Imagen Profesional | Sonia McRorey",
     description:
-      "Coaching de imagen para trabajar identidad, autoconcepto, seguridad, presencia profesional y claridad para sostener tu siguiente nivel.",
+      "Coaching de imagen para trabajar identidad, autoconcepto, seguridad, presencia profesional y claridad para sostener mayor visibilidad en Guadalajara.",
     image: `${SITE_URL}/assets/social-card-coaching-imagen-profesional.png`,
     h1: "Coaching de Imagen Profesional",
     schema: ["Service", "ProfessionalService", "WebPage", "BreadcrumbList", "FAQPage", "HowTo"],
@@ -63,7 +63,7 @@ export const routes = [
     file: "talleres-imagen-corporativa/index.html",
     title: "Talleres de Imagen Corporativa | Sonia McRorey",
     description:
-      "Talleres de imagen para personas, marcas y empresas que buscan presencia profesional, comunicación clara y mejor percepción del cliente.",
+      "Talleres de imagen para personas, marcas y empresas que buscan presencia profesional, comunicación clara y mejor percepción del cliente en Guadalajara.",
     image: `${SITE_URL}/assets/social-card-talleres-imagen-corporativa.png`,
     h1: "Talleres de Imagen Corporativa",
     schema: ["Service", "ProfessionalService", "WebPage", "BreadcrumbList", "FAQPage", "HowTo"],
@@ -75,7 +75,7 @@ export const routes = [
     file: "colorimetria-ejecutiva/index.html",
     title: "Colorimetría Ejecutiva en Guadalajara | Sonia McRorey",
     description:
-      "Colorimetría aplicada a imagen profesional para elegir tonos, guardarropa y presencia visual con intención en Guadalajara.",
+      "Colorimetría ejecutiva aplicada a imagen profesional para elegir tonos, guardarropa y presencia visual con intención en Guadalajara y en línea.",
     image: `${SITE_URL}/assets/social-card-colorimetria-ejecutiva.png`,
     h1: "Colorimetría Ejecutiva",
     schema: ["Service", "ProfessionalService", "WebPage", "BreadcrumbList", "FAQPage", "HowTo"],
@@ -87,7 +87,7 @@ export const routes = [
     file: "marca-personal-para-lideres/index.html",
     title: "Marca Personal para Líderes | Sonia McRorey",
     description:
-      "Marca personal para líderes, profesionistas y empresarios que necesitan comunicar identidad, confianza, autoridad y posicionamiento.",
+      "Marca personal para líderes, profesionistas y empresarios que necesitan comunicar identidad, confianza, autoridad y posicionamiento profesional.",
     image: `${SITE_URL}/assets/social-card-marca-personal-lideres.png`,
     h1: "Marca Personal para Líderes",
     schema: ["Service", "ProfessionalService", "WebPage", "BreadcrumbList", "FAQPage", "HowTo"],
