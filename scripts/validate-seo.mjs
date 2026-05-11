@@ -76,7 +76,7 @@ const badHeadingPattern = /(Que dicen\?|Quien Soy\?|¿Para quién esta diseñada
 const routeFiles = new Set(routes.map((route) => route.file));
 
 function walkHtmlFiles(dir = ".") {
-  const ignoreDirs = new Set([".git", "assets", "docs", "node_modules", "public"]);
+  const ignoreDirs = new Set([".git", "assets", "dist", "docs", "node_modules", "public"]);
   const files = [];
   for (const entry of readdirSync(dir)) {
     const path = dir === "." ? entry : `${dir}/${entry}`;

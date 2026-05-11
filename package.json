@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "build": "node scripts/validate-seo.mjs"
+    "validate:seo": "node scripts/validate-seo.mjs",
+    "build:static": "node scripts/build-static.mjs",
+    "validate:dist": "node scripts/validate-dist.mjs",
+    "build": "npm run validate:seo && npm run build:static && npm run validate:dist"
   },
   "devDependencies": {}
 }
