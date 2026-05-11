@@ -1818,13 +1818,8 @@ details[open] summary::after {
 
 .footer-main {
   display: grid;
-  grid-template-columns:
-    minmax(230px, 1.1fr)
-    minmax(120px, 0.48fr)
-    minmax(200px, 0.76fr)
-    minmax(240px, 0.92fr)
-    minmax(210px, 0.8fr);
-  gap: clamp(26px, 3.4vw, 48px);
+  grid-template-columns: minmax(250px, 1.15fr) minmax(130px, 0.55fr) minmax(190px, 0.72fr) minmax(230px, 0.82fr);
+  gap: clamp(28px, 4vw, 58px);
   align-items: start;
 }
 
@@ -1840,17 +1835,11 @@ details[open] summary::after {
 
 .footer-brand p,
 .footer-contact p,
-.footer-contact address,
 .footer-bottom p {
   margin: 18px 0 0;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.62;
-}
-
-.footer-contact address {
-  max-width: 30ch;
-  font-style: normal;
 }
 
 .footer-brand p {
@@ -1869,10 +1858,6 @@ details[open] summary::after {
 .footer-nav {
   display: grid;
   gap: 10px;
-}
-
-.footer-publications a {
-  max-width: 26ch;
 }
 
 .footer-nav a,
