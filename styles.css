@@ -174,8 +174,8 @@ p {
   height: 28px;
   background: currentColor;
   opacity: 0.82;
-  mask: url("assets/sonia-icon.svg?v=20260510-cachefix") center / contain no-repeat;
-  -webkit-mask: url("assets/sonia-icon.svg?v=20260510-cachefix") center / contain no-repeat;
+  mask: url("assets/sonia-icon.svg?v=20260510-breadcrumbs") center / contain no-repeat;
+  -webkit-mask: url("assets/sonia-icon.svg?v=20260510-breadcrumbs") center / contain no-repeat;
 }
 
 .site-nav {
@@ -259,6 +259,49 @@ p {
 .section {
   width: min(var(--max), calc(100% - 48px));
   margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  padding: 26px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: var(--header-nav);
+  transition: color 180ms ease;
+}
+
+.breadcrumbs a:hover {
+  color: var(--plum-accent);
+}
+
+.breadcrumbs span[aria-current="page"] {
+  color: var(--plum-accent);
+}
+
+.breadcrumb-service {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.breadcrumb-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: var(--brand-green-deep);
+  opacity: 0.72;
+  mask: url("assets/sonia-icon.svg?v=20260510-breadcrumbs") center / contain no-repeat;
+  -webkit-mask: url("assets/sonia-icon.svg?v=20260510-breadcrumbs") center / contain no-repeat;
 }
 
 .hero {
@@ -2026,6 +2069,12 @@ details[open] summary::after {
 
   .hero {
     min-height: auto;
+  }
+
+  .breadcrumbs {
+    gap: 8px;
+    padding-top: 20px;
+    font-size: 11px;
   }
 
   .hero-media {
