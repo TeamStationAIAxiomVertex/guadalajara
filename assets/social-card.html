@@ -2,6 +2,8 @@
 <html lang="es-MX">
   <head>
     <meta charset="utf-8" />
+    <title>Sonia McRorey Social Card</title>
+    <meta name="robots" content="noindex, nofollow" />
     <style>
       @font-face {
         font-family: Cormorant;
@@ -30,63 +32,105 @@
         height: 630px;
         margin: 0;
         overflow: hidden;
-        background: #f8f5f8;
-        color: #2d2430;
+        background: #f7f5f8;
+        color: #353535;
         font-family: Inter, Arial, sans-serif;
       }
 
       .card {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 390px;
-        gap: 42px;
+        grid-template-columns: minmax(0, 1.08fr) 430px;
+        gap: 48px;
         width: 1200px;
         height: 630px;
-        padding: 56px 64px 54px;
-        border: 1px solid #e8dfe8;
+        padding: 52px 58px 50px 64px;
+        border: 1px solid #e3dfe7;
         background:
-          linear-gradient(135deg, rgba(123, 85, 136, 0.13), rgba(238, 231, 239, 0.28) 48%, rgba(255, 250, 253, 0) 68%),
-          #f8f5f8;
+          linear-gradient(90deg, rgba(201, 177, 208, 0.13), rgba(111, 162, 135, 0.06) 48%, rgba(248, 245, 248, 0) 76%),
+          #f7f5f8;
+      }
+
+      .card::before,
+      .card::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .card::before {
+        inset: 28px;
+        border: 1px solid rgba(117, 92, 125, 0.16);
+      }
+
+      .card::after {
+        left: 38px;
+        bottom: 38px;
+        width: 150px;
+        height: 1px;
+        background: rgba(117, 92, 125, 0.28);
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
       }
 
       .logo {
-        width: 218px;
+        width: 214px;
         height: auto;
-        margin-bottom: 42px;
+        margin-bottom: 46px;
       }
 
       .eyebrow {
+        display: flex;
+        gap: 12px;
+        align-items: center;
         margin: 0 0 18px;
         color: #8c4799;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 600;
         letter-spacing: 0.14em;
         text-transform: uppercase;
       }
 
+      .eyebrow img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.74;
+      }
+
       h1 {
-        width: 690px;
+        width: 660px;
         margin: 0;
-        color: #241f24;
+        color: #353535;
         font-family: Cormorant, Georgia, serif;
-        font-size: 68px;
+        font-size: 71px;
         font-weight: 600;
-        line-height: 0.92;
+        line-height: 0.91;
+        letter-spacing: 0;
+      }
+
+      h1 em {
+        display: block;
+        color: #8c4799;
+        font-style: italic;
+        font-weight: 500;
       }
 
       .subhead {
-        width: 655px;
-        margin: 22px 0 24px;
-        color: #6f6670;
+        width: 610px;
+        margin: 24px 0 24px;
+        color: #76717a;
         font-size: 22px;
         line-height: 1.38;
       }
 
       .services {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
         gap: 10px;
-        width: 690px;
+        width: 660px;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -94,65 +138,83 @@
 
       .services li {
         padding: 9px 12px;
-        border: 1px solid rgba(123, 85, 136, 0.18);
+        border: 1px solid rgba(111, 162, 135, 0.24);
         border-radius: 999px;
-        background: rgba(255, 253, 253, 0.68);
-        color: #6a5270;
+        background: rgba(111, 162, 135, 0.1);
+        color: #205c40;
         font-size: 13px;
         font-weight: 600;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.04em;
         text-transform: uppercase;
       }
 
       .location {
         margin: 22px 0 0;
-        color: #544b55;
-        font-size: 16px;
+        color: #5b5660;
+        font-size: 15px;
         font-weight: 600;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
       }
 
       .media {
         position: relative;
-        height: 520px;
-        padding: 0;
-        border: 1px solid rgba(201, 177, 208, 0.72);
+        z-index: 1;
+        align-self: stretch;
+        min-height: 520px;
+        padding: 12px;
+        border: 1px solid rgba(117, 92, 125, 0.24);
         border-radius: 22px;
-        background: rgba(255, 250, 253, 0.55);
+        background: rgba(251, 250, 252, 0.7);
         overflow: hidden;
       }
 
       .media > img {
         width: 100%;
         height: 100%;
+        border-radius: 16px;
         object-fit: cover;
-        object-position: center top;
-        filter: saturate(0.9) contrast(0.9) brightness(1.03);
+        object-position: 71% 50%;
+        filter: saturate(0.84) contrast(0.88) brightness(1.04);
+      }
+
+      .media figcaption {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        padding: 14px 16px;
+        border: 1px solid rgba(232, 223, 232, 0.9);
+        border-radius: 14px;
+        background: rgba(247, 245, 248, 0.9);
+        color: #5f5761;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.25;
       }
     </style>
   </head>
   <body>
     <main class="card">
-      <section>
+      <section class="content">
         <img class="logo" src="sonia-logo-ai.png" alt="Sonia McRorey" />
-        <p class="eyebrow">Imagen Ejecutiva · Guadalajara</p>
-        <h1>Consultora de Imagen Ejecutiva en Guadalajara</h1>
+        <p class="eyebrow"><img src="sonia-icon.svg" alt="" aria-hidden="true" />Consultora de imagen en Guadalajara</p>
+        <h1>Consultora de imagen <em>en Guadalajara</em></h1>
         <p class="subhead">
-          Presencia profesional, imagen estratégica y percepción ejecutiva para líderes,
-          profesionistas y empresas.
+          Asesoría y coaching de imagen para líderes, profesionistas y equipos en
+          Guadalajara, Zapopan y Jalisco.
         </p>
         <ul class="services">
-          <li>Asesoría ejecutiva</li>
-          <li>Presencia profesional</li>
-          <li>Consultoría empresarial</li>
-          <li>Talleres corporativos</li>
-          <li>Marca personal para líderes</li>
+          <li>Asesoría de imagen integral</li>
+          <li>Coaching de imagen</li>
+          <li>Talleres</li>
+          <li>Guadalajara + Jalisco</li>
         </ul>
-        <p class="location">Guadalajara · Zapopan · Andares · Puerta de Hierro</p>
+        <p class="location">Sonia McRorey · ImagenCoach.com</p>
       </section>
       <figure class="media">
-        <img src="sonia-executive-duo.png" alt="" />
+        <img src="sonia-hero.png" alt="Sonia McRorey impartiendo un taller de imagen y presencia profesional" />
+        <figcaption>Presencia profesional para decisiones, liderazgo y posicionamiento.</figcaption>
       </figure>
     </main>
   </body>

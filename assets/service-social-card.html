@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sonia McRorey Service Social Cards</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      @font-face {
+        font-family: Cormorant;
+        src: url("cormorant-600.ttf");
+        font-weight: 600;
+      }
+
+      @font-face {
+        font-family: Inter;
+        src: url("inter-500.ttf");
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: Inter;
+        src: url("inter-600.ttf");
+        font-weight: 600;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 1200px;
+        height: 630px;
+        margin: 0;
+        overflow: hidden;
+        background: #f7f5f8;
+        color: #353535;
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      .card {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1.06fr) 410px;
+        gap: 50px;
+        width: 1200px;
+        height: 630px;
+        padding: 52px 58px 48px 64px;
+        border: 1px solid #e4dfe8;
+        background:
+          linear-gradient(90deg, rgba(201, 177, 208, 0.18), rgba(111, 162, 135, 0.08) 50%, rgba(247, 245, 248, 0) 78%),
+          #f7f5f8;
+      }
+
+      .card::before,
+      .card::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+      }
+
+      .card::before {
+        inset: 28px;
+        border: 1px solid rgba(117, 92, 125, 0.16);
+      }
+
+      .card::after {
+        left: 42px;
+        top: 84px;
+        width: 1px;
+        height: 462px;
+        background: linear-gradient(180deg, rgba(140, 71, 153, 0.34), rgba(111, 162, 135, 0.28));
+      }
+
+      .content,
+      .media {
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo {
+        width: 214px;
+        height: auto;
+        margin-bottom: 42px;
+      }
+
+      .eyebrow {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin: 0 0 18px;
+        color: #8c4799;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+      }
+
+      h1 {
+        width: 690px;
+        margin: 0;
+        color: #353535;
+        font-family: Cormorant, Georgia, serif;
+        font-size: 69px;
+        font-weight: 600;
+        line-height: 0.93;
+        letter-spacing: 0;
+      }
+
+      h1 em {
+        display: block;
+        color: #8c4799;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .subhead {
+        width: 640px;
+        margin: 24px 0 24px;
+        color: #76717a;
+        font-size: 21px;
+        line-height: 1.4;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 670px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tags li {
+        padding: 9px 12px;
+        border: 1px solid rgba(111, 162, 135, 0.24);
+        border-radius: 999px;
+        background: rgba(111, 162, 135, 0.1);
+        color: #205c40;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .location {
+        margin: 24px 0 0;
+        color: #5b5660;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .media {
+        align-self: stretch;
+        min-height: 520px;
+        padding: 12px;
+        border: 1px solid rgba(117, 92, 125, 0.22);
+        border-radius: 22px;
+        background: rgba(251, 250, 252, 0.72);
+        overflow: hidden;
+      }
+
+      .media > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: var(--image-position, 50% 50%);
+        filter: saturate(0.88) contrast(0.9) brightness(1.04);
+      }
+
+      .media figcaption {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        padding: 14px 16px;
+        border: 1px solid rgba(232, 223, 232, 0.92);
+        border-radius: 14px;
+        background: rgba(247, 245, 248, 0.92);
+        color: #5f5761;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <section class="content">
+        <img class="logo" src="sonia-logo-ai.png" alt="Sonia McRorey" />
+        <p class="eyebrow"><img src="sonia-icon.svg" alt="" aria-hidden="true" /><span data-eyebrow></span></p>
+        <h1 data-title></h1>
+        <p class="subhead" data-subhead></p>
+        <ul class="tags" data-tags></ul>
+        <p class="location">Guadalajara · Zapopan · En línea</p>
+      </section>
+      <figure class="media">
+        <img data-image alt="" />
+        <figcaption data-caption></figcaption>
+      </figure>
+    </main>
+    <script>
+      const cards = {
+        asesoria: {
+          eyebrow: "Asesoría de Imagen Ejecutiva",
+          title: "Asesoría de imagen <em>en Guadalajara</em>",
+          subhead: "Proceso integral para alinear presencia, estilo, color, guardarropa y decisiones profesionales.",
+          tags: ["Imagen integral", "Guardarropa estratégico", "Color + estilo"],
+          image: "sonia-mcrorey-about.png",
+          position: "52% 48%",
+          caption: "Presencia profesional clara, coherente y sostenible."
+        },
+        coaching: {
+          eyebrow: "Coaching de Imagen Profesional",
+          title: "Coaching de imagen <em>profesional</em>",
+          subhead: "Trabajo interno para sostener seguridad, autoconcepto, visibilidad y presencia profesional.",
+          tags: ["Autoimagen", "Claridad interna", "Presencia profesional"],
+          image: "sonia-mcrorey-about.png",
+          position: "52% 48%",
+          caption: "La imagen empieza en la base desde la que decides."
+        },
+        talleres: {
+          eyebrow: "Talleres de Imagen Corporativa",
+          title: "Talleres de imagen <em>corporativa</em>",
+          subhead: "Experiencias prácticas para personas, marcas y empresas que necesitan presencia y percepción clara.",
+          tags: ["Equipos", "Empresas", "Percepción del cliente"],
+          image: "sonia-landing-hero.png",
+          position: "55% 50%",
+          caption: "Talleres para equipos, marcas y contextos de mayor exposición."
+        },
+        colorimetria: {
+          eyebrow: "Colorimetría Ejecutiva",
+          title: "Colorimetría <em>ejecutiva</em>",
+          subhead: "Color aplicado a imagen profesional, guardarropa y presencia visual con intención.",
+          tags: ["Color profesional", "Rostro", "Compras con criterio"],
+          image: "sonia-cream-room.png",
+          position: "50% 50%",
+          caption: "El color correcto refuerza presencia, claridad y energía visible."
+        },
+        marca: {
+          eyebrow: "Marca Personal para Líderes",
+          title: "Marca personal <em>para líderes</em>",
+          subhead: "Estrategia para comunicar identidad, confianza, autoridad profesional y posicionamiento.",
+          tags: ["Liderazgo", "Reputación", "Autoridad profesional"],
+          image: "sonia-executive-duo.png",
+          position: "58% 50%",
+          caption: "Posicionamiento profesional para líderes, empresarios y profesionistas."
+        }
+      };
+
+      const key = new URLSearchParams(window.location.search).get("card") || "asesoria";
+      const card = cards[key] || cards.asesoria;
+
+      document.querySelector("[data-eyebrow]").textContent = card.eyebrow;
+      document.querySelector("[data-title]").innerHTML = card.title;
+      document.querySelector("[data-subhead]").textContent = card.subhead;
+      document.querySelector("[data-caption]").textContent = card.caption;
+
+      const image = document.querySelector("[data-image]");
+      image.src = card.image;
+      image.alt = card.caption;
+      image.style.setProperty("--image-position", card.position);
+
+      const tags = document.querySelector("[data-tags]");
+      card.tags.forEach((tag) => {
+        const item = document.createElement("li");
+        item.textContent = tag;
+        tags.appendChild(item);
+      });
+    </script>
+  </body>
+</html>

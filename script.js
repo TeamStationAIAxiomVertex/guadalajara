@@ -20,7 +20,7 @@ form?.addEventListener("submit", (event) => {
   const data = new FormData(form);
   const status = form.querySelector(".form-status");
   const message = [
-    "Hola Sonia, quiero solicitar una asesoría.",
+    "Hola Sonia, me interesa agendar un diagnóstico.",
     "",
     `Nombre: ${data.get("name") || ""}`,
     `Email: ${data.get("email") || ""}`,
@@ -31,6 +31,6 @@ form?.addEventListener("submit", (event) => {
   ].join("\n");
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
-  status.textContent = "Abriendo WhatsApp con tu mensaje listo para Sonia.";
+  status.textContent = "Abriendo WhatsApp con tu diagnóstico listo para Sonia.";
   window.open(url, "_blank", "noopener");
 });
